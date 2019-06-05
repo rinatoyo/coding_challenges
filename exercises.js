@@ -1,6 +1,14 @@
 // Function -  FirstFactorial(num)
 // The function will take the num parameter being passed and return the factorial of it (ie. if num =3, return(3 * 2 * 1)).  For test cases, the range will be between 1 and 18.
 
+function FirstFactorial(num){
+    if (num === 0){
+        return 1;
+    }
+    return num * FirstFactorial(num-1);
+}
+console.log(FirstFactorial(8));
+
 // Function - SimpleAdding(num)
 // The function will take the num parameter and add up all the numbers from 1 to num.  For test cases, the parameter num will be any number from 1 to 1000.
 
