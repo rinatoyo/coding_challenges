@@ -12,6 +12,14 @@ console.log(FirstFactorial(8));
 // Function - SimpleAdding(num)
 // The function will take the num parameter and add up all the numbers from 1 to num.  For test cases, the parameter num will be any number from 1 to 1000.
 
+function SimpleAdding(num){
+    if (num === 0){
+        return 0;
+    }
+    return num + SimpleAdding(num-1);
+}
+console.log(SimpleAdding(6));
+
 // Function - LetterCapitalize(str)
 // The function will take the str parameter being passed and capitalize the first letter of each word.  Words will be separated by only one space.
 
